@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Sketch</title>
+    <!-- Titulo de la página -->
+    <title>Rotación, translación y escalación de figuras.</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <!-- Importación de la libreria p5  -->
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
   </head>
-
+  <!-- Body de la página -->
   <body>
     <div class="container">
       <div class="button-container">
+        <!-- Botones de las acciones -->
         <button id="rotacion" onclick="eventRotation();">Rotación</button>
         <button id="translacion" onclick="eventTranslation();">
           Translación
@@ -22,7 +23,9 @@
         <button id="escalacion" onclick="eventEscalation();">Escalación</button>
       </div>
     </div>
+    <!-- Figura pintada en el canvas -->
     <div id="figure"></div>
+    <!-- Scripts de la lógica importados -->
     <script src="sketch.js"></script>
     <script src="events.js"></script>
   </body>

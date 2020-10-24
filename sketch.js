@@ -1,12 +1,16 @@
-let y = 0;
+//Dibujo del plano cartesiano
 function setup() {
+  //Dimensiones del canvas
   createCanvas(1000, 600);
 }
 
 function draw() {
+  // Color en hexadecimal del plano cartesiano
   background("#7494aa");
 
+  // Color de las líneas del eje X y eje Y
   fill(250);
+  // Tamaño y escalamiento del eje X y Y en pantalla por medio de las funciones mouseX y mouseY
   textSize(35);
   text("x: " + mouseX + " y: " + mouseY, 10, 35);
 

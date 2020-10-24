@@ -8,12 +8,14 @@ canvas {
   display: block;
 }
 
+/* Contenedor padre de los 3 botones */
 .container {
   display: flex;
   justify-content: flex-end;
   position: relative;
 }
 
+/* Contenedor hijo de los 3 botones */
 .button-container {
   display: flex;
   justify-content: flex-end;
@@ -22,16 +24,17 @@ canvas {
   position: absolute;
 }
 
+/* Id's de los 3 botones */
 #rotacion,
 #translacion,
 #escalacion {
-  /* position: absolute; */
   width: 200px;
   height: 50px;
   margin: 40px 45px 0px 0px;
   font-size: 18px;
 }
 
+/* Id de la figura */
 #figure {
   height: 100px;
   width: 100px;
@@ -43,6 +46,7 @@ canvas {
   animation-iteration-count: infinite;
 }
 
+/* Animacion de rotacion */
 @keyframes rotation {
   100% {
     transform: rotate(90deg) translateZ(0);
@@ -50,6 +54,7 @@ canvas {
   }
 }
 
+/* Animacion de escalación */
 @keyframes escalation {
   0% {
     height: 100px;
@@ -89,6 +94,7 @@ canvas {
   }
 }
 
+/* Animacion de cambio de colores de la figura */
 @keyframes colors {
   0% {
     background-color: white;
@@ -107,12 +113,14 @@ canvas {
   }
 }
 
+/* Animacion de evento de translacion */
 @keyframes translation {
   50% {
     margin: 300px;
   }
 }
 
+/* Animacion de evento de rotación */
 @keyframes rotation {
   100% {
     transform: rotate(360deg);
