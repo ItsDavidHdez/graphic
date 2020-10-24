@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+}
+
+#rotacion,
+#translacion,
+#escalacion {
+  /* position: absolute; */
+  width: 200px;
+  height: 50px;
+  margin: 40px 45px 0px 0px;
+  font-size: 18px;
+}
+
+#figure {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: absolute;
+  margin: 200px;
+}
+
+.rotation {
+  transform: rotate(90deg) translateZ(0);
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes escalation {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+  10% {
+    height: 120px;
+    width: 120px;
+  }
+  20% {
+    height: 140px;
+    width: 140px;
+  }
+  30% {
+    height: 120px;
+    width: 120px;
+  }
+  40% {
+    height: 100px;
+    width: 100px;
+  }
+  50% {
+    height: 80px;
+    width: 80px;
+  }
+  60% {
+    height: 60px;
+    width: 60px;
+  }
+  70% {
+    height: 80px;
+    width: 80px;
+  }
+  80% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes translation {
+  50% {
+    margin: 300px;
+  }
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
