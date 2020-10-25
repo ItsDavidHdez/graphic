@@ -26,7 +26,6 @@ const eventTranslation = () => {
   } else if (x >= 201 || y >= 201) {
     highTranslation();
   }
-  // animationName hace referencia al @keyframe "translation" del archivo style.css
 };
 
 // Evento de rotación

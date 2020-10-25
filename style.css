@@ -284,3 +284,13 @@ canvas {
   top: -25px;
   left: 580px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  #rotacion,
+  #translacion,
+  #escalacion {
+    margin-top: 700px;
+    display: flex;
+    justify-content: center;
+  }
+}
