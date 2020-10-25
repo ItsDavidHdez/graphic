@@ -7,9 +7,6 @@
     <title>Rotación, translación y escalación de figuras.</title>
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Importación de la libreria p5  -->
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
   </head>
   <!-- Body de la página -->
   <body>
@@ -24,9 +21,25 @@
       </div>
     </div>
     <!-- Figura pintada en el canvas -->
-    <div id="figure"></div>
+    <div class="cartesiano">
+      <div id="figure"></div>
+
+      <!-- marcações -->
+      <div class="xy0">0</div>
+      <div class="y600px">600px</div>
+      <div class="y500px">500px</div>
+      <div class="y400px">400px</div>
+      <div class="y300px">300px</div>
+      <div class="y200px">200px</div>
+      <div class="y100px">100px</div>
+      <div class="x100px">100px</div>
+      <div class="x200px">200px</div>
+      <div class="x300px">300px</div>
+      <div class="x400px">400px</div>
+      <div class="x500px">500px</div>
+      <div class="x600px">600px</div>
+    </div>
     <!-- Scripts de la lógica importados -->
-    <script src="sketch.js"></script>
     <script src="events.js"></script>
   </body>
 </html>
