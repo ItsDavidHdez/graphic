@@ -25,9 +25,7 @@ const eventRotation = () => {
 
 // Evento de escalación
 const eventEscalation = () => {
-  if (figure) {
-    figure.style.animationName = "escalation";
-    figure.style.animationDuration = "3s";
-    figure.style.animationIterationCount = "infinite";
-  }
+  figure.style.animationName = "escalation";
+  figure.style.animationDuration = "3s";
+  figure.style.animationIterationCount = "infinite";
 };
