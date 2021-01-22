@@ -37,12 +37,31 @@ canvas {
 #figure {
   height: 100px;
   width: 100px;
-  background-color: aqua;
+  /* background-color: aqua; */
   position: absolute;
   margin: 0px;
-  animation-name: colors;
-  animation-duration: 3s;
+  /* animation-name: colors; */
+  animation-name: imagePosition;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
+  border-radius: 50%;
+  background-image: url("./utils/unnamed.jpg");
+  background-repeat: no-repeat;
+  background-size: 210px;
+}
+
+@keyframes imagePosition {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  50% {
+    background-position: -100px 0px;
+  }
+
+  100% {
+    background-position: 0px 0px;
+  }
 }
 
 #btnModal {

@@ -13,6 +13,7 @@ const eventTranslation = () => {
   figure.style.animationName = "highTranslation";
   figure.style.animationDuration = "2.5s";
   figure.style.animationIterationCount = "infinite";
+  figure.style.backgroundSize = "210px";
 };
 
 // Evento de rotación
@@ -21,6 +22,7 @@ const eventRotation = () => {
   figure.style.animationDuration = "3s";
   figure.style.animationIterationCount = "infinite";
   figure.style.transform = `rotate(${rotation}deg)`;
+  figure.style.backgroundSize = "210px";
 };
 
 // Evento de escalación
@@ -28,4 +30,5 @@ const eventEscalation = () => {
   figure.style.animationName = "escalation";
   figure.style.animationDuration = "3s";
   figure.style.animationIterationCount = "infinite";
+  figure.style.backgroundSize = "400px";
 };
