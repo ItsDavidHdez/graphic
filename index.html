@@ -21,33 +21,34 @@
         <!-- Botones de las acciones -->
         <button
           type="button"
-          class="btn btn-primary"
-          id="rotacion"
-          onclick="eventRotation();"
+          class="btn btn-primary buttons"
+          onclick="eventFilled();"
         >
-          Rotación
+          Relleno homogéneo
         </button>
         <button
           type="button"
-          class="btn btn-primary"
-          id="translacion"
-          onclick="eventTranslation();"
+          class="btn btn-primary buttons"
+          onclick="eventDegraded();"
         >
-          Translación
+          Degradado
         </button>
         <button
           type="button"
-          class="btn btn-primary"
-          id="escalacion"
-          onclick="eventEscalation();"
+          class="btn btn-primary buttons"
+          onclick="eventTexture();"
         >
-          Escalación
+          Textura
         </button>
       </div>
     </div>
     <!-- Figura pintada en el canvas -->
     <div class="cartesiano">
       <div id="figure"></div>
+      <div id="figure2"></div>
+      <div id="figure3"></div>
+      <div id="figure4"></div>
+      <div id="figure5"></div>
 
       <!-- marcações -->
       <div class="xy0">0</div>
